@@ -1,1 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Cookie&family=Ole&family=Roboto:ital,wght@0,100..900;1,100..900&family=Yesteryear&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ole&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
 @import "tailwindcss";
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+@layer utilities {
+  .font-ole {
+    font-family: "Ole", cursive;
+  }
+  .font-roboto {
+    font-family: "Roboto", sans-serif;
+  }
+  .font-yesteryear {
+    font-family: "Yesteryear", cursive;
+  }
+  .font-cookie {
+    font-family: "Cookie", cursive;
+  }
+}
+@layer components {
+  .link {
+    @apply text-gray-900 transition;
+  }
+
+  .link:hover {
+    color: #fcb800;
+  }
+
+  .link:active {
+    color: #fcb800;
+  }
+}
+
+.container {
+  width: 90%;
+}
