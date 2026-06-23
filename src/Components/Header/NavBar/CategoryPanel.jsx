@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
 import Data from "./Data.js";
 export default function CategoryPanel({ open }) {
   return (
@@ -10,7 +9,7 @@ export default function CategoryPanel({ open }) {
             <Link
               key={item.id}
               to="/"
-              className="material-symbols-outlined flex items-center gap-3 px-4 py-3 pl-5! hover:bg-gray-100"
+              className="category-row flex items-center gap-3 px-4 py-3 pl-5! hover:bg-gray-100"
             >
               <span className="material-symbols-outlined">{item.symbol}</span>
               <span className="">{item.line}</span>
