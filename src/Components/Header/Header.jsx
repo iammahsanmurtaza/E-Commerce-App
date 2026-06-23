@@ -16,7 +16,9 @@ import ShoppingCartIcon from "@mui/icons-material/ShoppingCartOutlined";
 import Tooltip from "@mui/material/Tooltip";
 
 // NavBar
-import NavBar from "./NavBar/NavBar.jsx";
+// import NavBar from "./NavBar/NavBar.jsx";
+import NavBar2 from "./NavBar/NavBar2.jsx";
+import Data from "./NavBar/Data.js";
 const CartBadge = styled(Badge)`
   & .${badgeClasses.badge} {
     top: -3px;
@@ -92,7 +94,7 @@ export default function Header() {
                       </IconButton>
                     </Tooltip>
                   </Link>
-                  <Link to="/login ">
+                  <Link to="/login">
                     <Tooltip title="Account">
                       <MdPersonOutline className="text-[37px] link-primary text-gray-800! " />
                     </Tooltip>
@@ -103,7 +105,12 @@ export default function Header() {
           </div>
         </div>
       </header>
-      <NavBar />
+      {/* <NavBar /> */}
+      <NavBar2
+        Data={Data}
+        buttonBig={"Shop By Department"}
+        number={"Hotline: 1-800-234-5678"}
+      />
     </>
   );
 }
