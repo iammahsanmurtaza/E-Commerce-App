@@ -38,3 +38,57 @@
 .container {
   width: 90%;
 }
+/* src/index.css */
+.material-symbols-outlined {
+  font-family: "Material Symbols Outlined";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  display: inline-block;
+  letter-spacing: normal;
+  white-space: nowrap;
+  text-transform: none;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+    "FILL" 0,
+    "wght" 400,
+    "GRAD" 0,
+    "opsz" 24;
+}
+.material-symbols-outlined {
+  transition: all 0.25s ease;
+
+  font-variation-settings:
+    "FILL" 0,
+    "wght" 400,
+    "GRAD" 0,
+    "opsz" 24;
+}
+
+.material-symbols-outlined:hover {
+  transform: scale(1.1);
+
+  font-variation-settings:
+    "FILL" 1,
+    "wght" 700,
+    "GRAD" 200,
+    "opsz" 24;
+}
+.shop-dept:hover .shop-dept-btn,
+.shop-dept.open .shop-dept-btn {
+  color: #fcb800;
+  background-color: #fbb82c20;
+}
+
+.category-row:hover .material-symbols-outlined {
+  transform: scale(1.1);
+  font-variation-settings:
+    "FILL" 1,
+    "wght" 700,
+    "GRAD" 200,
+    "opsz" 24;
+}
