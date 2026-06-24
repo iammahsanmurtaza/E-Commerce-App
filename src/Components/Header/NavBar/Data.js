@@ -1,6 +1,10 @@
 const Data = [
   // Buttons
   {
+    id: 0,
+    label: "Shop By Categories",
+  },
+  {
     id: 1,
     label: "Home Layout",
   },
@@ -26,6 +30,7 @@ const Data = [
     id: 6,
     line: "Consumer Electric",
     symbol: "local_laundry_service",
+    
   },
   {
     id: 7,
@@ -35,7 +40,7 @@ const Data = [
   {
     id: 8,
     line: "Home, Kitchen and Garden",
-    symbol: "grass",
+    symbol: "light_group",
   },
   {
     id: 9,

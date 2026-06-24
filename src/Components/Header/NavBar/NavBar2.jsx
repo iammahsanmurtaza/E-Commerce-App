@@ -9,7 +9,8 @@ import BlenderIcon from "@mui/icons-material/Blender";
 // states
 import { useState } from "react";
 // Data
-import Data  from "./Data.js";
+import Buttons from "./Buttons.jsx";
+import Data from "./Data.js";
 export default function NavBar2({ buttonBig, number }) {
   const [open, setOpen] = useState(false);
   return (
@@ -19,66 +20,17 @@ export default function NavBar2({ buttonBig, number }) {
         onMouseEnter={() => setOpen(true)}
         onMouseLeave={() => setOpen(false)}
       >
-        <Button
-          className="  text-lg! link! transition "
-          sx={{
-            transition: "all 0.2s ease",
-            color: "black",
-            whiteSpace: "nowrap",
-            padding: "8px 16px",
-            "& .MuiTouchRipple-root": {
-              color: "#fbb82c",
-            },
-            "&:hover": {
-              backgroundColor: "#ffffff",
-              transform: "scale(1)",
-              color: "#fcb800",
-            },
-            "&:active": {
-              transform: "scale(1)",
-              backgroundColor: "#fbb82c20",
-            },
-          }}
-        >
-          {" "}
-          <IoMdMenu />
-          &nbsp;&nbsp;{buttonBig}
-          &nbsp;&nbsp; <FaAngleDown />
-        </Button>
-        <CategoryPanel open = {open}/>
+        <Buttons item={Data[0]} buttonBig={buttonBig} />
+        <CategoryPanel open={open} start = {6} />
       </div>
       <div className="col2 flex items-center justify-center w-[60%]">
-        {Data.slice(0, 5).map((item) => (
-          <li className=" list-none font-medium gap-7">
+        {Data.slice(1, 6).map((item) => (
+          <li className=" list-none font-medium gap-7" key={item.id}>
             <Link
-              key={item.id}
               to="/"
               className="link transition text-md flex items-center gap-2"
             >
-              <Button
-                className="  text-md! link! transition "
-                sx={{
-                  transition: "all 0.2s ease",
-                  color: "black",
-                  whiteSpace: "nowrap",
-                  padding: "8px 16px",
-                  "& .MuiTouchRipple-root": {
-                    color: "#fbb82c",
-                  },
-                  "&:hover": {
-                    backgroundColor: "#ffffff",
-                    transform: "scale(1)",
-                    color: "#fcb800",
-                  },
-                  "&:active": {
-                    transform: "scale(1)",
-                    backgroundColor: "#fbb82c20",
-                  },
-                }}
-              >
-                {item.label}&nbsp;&nbsp;
-                {item.id !== 5 ? <LiaAngleDownSolid /> : null}
-              </Button>
+              <Buttons item={item} name={null} />
             </Link>
           </li>
         ))}

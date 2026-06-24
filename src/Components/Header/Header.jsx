@@ -107,7 +107,6 @@ export default function Header() {
       </header>
       {/* <NavBar /> */}
       <NavBar2
-        Data={Data}
         buttonBig={"Shop By Department"}
         number={"Hotline: 1-800-234-5678"}
       />

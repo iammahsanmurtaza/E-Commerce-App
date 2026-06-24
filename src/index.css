@@ -78,11 +78,6 @@
     "GRAD" 200,
     "opsz" 24;
 }
-.shop-dept:hover .shop-dept-btn,
-.shop-dept.open .shop-dept-btn {
-  color: #fcb800;
-  background-color: #fbb82c20;
-}
 
 .category-row:hover .material-symbols-outlined {
   transform: scale(1.1);
